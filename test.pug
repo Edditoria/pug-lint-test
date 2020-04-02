@@ -1,0 +1,31 @@
+html
+	body
+		.intro
+			p This pug file aims to test in "SublimeLinter-pug-lint" (or other pug-lint tools). Suppose you should see 2 things:
+			ol
+				li Dots in the gutter (the column besides line number)
+				li Warnings in "Output: SublimeLinter" panel in Sublime Text 3.
+		.disallowAttributeConcatenation
+			p
+				//- Invalid
+				a(href='text ' + title) Link
+			p
+				//- Invalid under `'aggressive'`
+				a(href=text + title) Link
+			p
+				//- Invalid under `'aggressive'`
+				a(href=num1 + num2) Link
+		.disallowAttributeInterpolation
+			p
+				//- Invalid
+				a(href='text #{title}') Link
+			p
+				//- Valid
+				a(href='text \#{title}') Link
+			p
+				//- Valid
+				a(href='text \\#{title}') Link
+		.disallowBlockExpansion
+			//- Invalid
+			p: strong text
+			table: tr: td text

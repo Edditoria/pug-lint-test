@@ -1,0 +1,5 @@
+{
+	"disallowAttributeConcatenation": true,
+	"disallowAttributeInterpolation": true,
+	"disallowBlockExpansion": true
+}
