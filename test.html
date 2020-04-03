@@ -1,0 +1,30 @@
+
+<html>
+  <body>
+    <div class="intro">
+      <p>This pug file is created to test pug-lint tools, such as "SublimeLinter-pug-lint". Suppose you should see 2 things:</p>
+      <ol>
+        <li>Dots in the gutter (the column besides line number)</li>
+        <li>Warnings in "Output: SublimeLinter" panel in Sublime Text 3.</li>
+      </ol>
+    </div>
+    <div class="disallowAttributeConcatenation">
+      <p><a href="text undefined">Link</a></p>
+      <p><a href="null">Link</a></p>
+      <p><a href="null">Link</a></p>
+    </div>
+    <div class="disallowAttributeInterpolation">
+      <p><a href="text #{title}">Link</a></p>
+      <p><a href="text #{title}">Link</a></p>
+      <p><a href="text \#{title}">Link</a></p>
+    </div>
+    <div class="disallowBlockExpansion">
+      <p><strong>text</strong></p>
+      <table>
+        <tr>
+          <td>text</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
