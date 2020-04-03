@@ -48,10 +48,19 @@ If you see something wrong, please raise an issue in "[SublimeLinter-pug-lint][s
 
 There is a `<test.json>` for reference of [SublimeLinter-json][sublimelinter_json]. Expect 1 error.
 
+## Test in Other Applications
+
+Result in Atom with [linter-pug package][atom_linter_pug]:
+
+![Atom linter-pug screenshot][atom_linter_pug_shot]
+
+Suggest more application in Issues if you want. :tada:
 
 [wrong_shot]: images/sublimelinter-pug-lint-wrong-screenshot.png
 [correct_shot]: images/sublimelinter-pug-lint-correct-screenshot.png
+[atom_linter_pug_shot]: images/atom-linter-pug-screenshot.png
 
 [sublimelinter]: https://github.com/SublimeLinter/SublimeLinter
 [sublimelinter_pug]: https://github.com/SublimeLinter/SublimeLinter-pug-lint
 [sublimelinter_json]: https://github.com/SublimeLinter/SublimeLinter-json
+[atom_linter_pug]: https://github.com/AtomLinter/atom-linter-pug
